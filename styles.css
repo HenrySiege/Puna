@@ -1,5 +1,5 @@
-body {
-    background-image: url("leshi.jpg") ;
+ body {
+    background-image: background-image("leshi.jpg") ;
 }
 .carousel-item {
 	height: 100vh;
