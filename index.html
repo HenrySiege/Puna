@@ -3,11 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Personal Web-Page</title>
+	<link href="styles.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+	<script src="scripts.js"></script> 
 </head>
 <body class="bg-secondary">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
@@ -44,23 +48,98 @@
 	<br>
 	<div class="container">
 		<div class="parent-div bg-light d-flex align-items-center justify-content-center" style="width: 1100px; height: 100px;"></div>
-	<div class="parent-div bg-white d-flex align-items-center justify-content-center" style="width: 1100px; height: 100px;">
-		<div class="row">
-				<div class="col-lg-2 bg-danger">
-					
-					<div class="boxDiv">aaa</div>
 
+    <div class="aboutus-section bg-white" style="width: 1100px;">
+		<div class="container">
+		    <div class="row">
+				<div class="text-center col-md-5">
+						<img src="gu-a.png" class="text-center" >
+					<div class="text-center">
+						<button type="button" class="btn btn-primary">Centered button</button>
+					  </div>
 				</div>
+            <div class="col-md-7">
+			     <div class="col-md-7 col-sm-6 col-xs-12">
+                 <h3>This is,</h1>
+				 <h4>A Personal Website Project</h3>
 
-			<div class="col-lg-2 bg-danger">
-									
-				<div class="boxDiv">aaa</div>
-
+					 <p class="entrance-paragraph" style="font-size: 12px;">My name is Bernard Shelly. I am 32 years old. Lorem ipsum dolor sit amet, consectetur ascing elits, sed do eiusmod tempor incidunt ut labore et dolore mafgna aliqua. Ut enim ad mini vniam quis nerci, tation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis autes irure dolor in reprehenderit in etrs voluptate velit esse cillum dolore eu fugiat nulla pariatur. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+			     </div>
+				 <div class="row">
+					<ul style="list-style: none;">
+						<li>Age</li>
+						<li>Nationality</li>
+						<li>Adress</li>
+						<li>Phone</li>
+						<li>Skype</li>
+						<li>Email</li>
+						<li>Website</li>
+					</ul>
+					<ul style="list-style: none;">
+						<li>XXXXXX</li>
+						<li>XXXXXX</li>
+						<li>XXXXXX</li>
+						<li>XXXXXX</li>
+						<li>XXXXXX</li>
+						<li>XXXXXX</li>
+						<li>XXXXXX</li>
+					</ul>
+				</div>
+				<span class="actions">
+					<ul>
+						<li> <a href=""><i class="fab fa-facebook-f lg"></i></a></li>
+						<li><a href=""><i class="fab fa-twitter lg"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram lg"></i></a></li>
+						<li><a href=""><i class="fab fa-google-plus-g lg"></i></a></li>
+						<li><a href=""><i class="fab fa-linkedin-in lg"></i></a></li>
+						<li><a href=""><i class="fab fa-pinterest lg"></i></a></li>
+						<li><a href=""><i class="fab fa-skype lg"></i></a></li>
+						<li><a href=""><i class="fab fa-flickr lg"></i></a></li>
+						<li><a href=""><i class="fab fa-dribbble lg"></i></a></li>
+						<li><a href=""><i class="fas fa-rss lg"></i></a></li>
+					</ul>
+				  </span>
 			</div>
-			
+		</div>
 		</div>
 	</div>
-
+	<div class="aboutus-section bg-light" style="width: 1100px;">
+		  <section class="">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="sectionTitle">Skills</div>
+						<div id="skillgraph" class="panel panel-default row">
+							<div class='panel-title text-Left '></div>
+							<div class='row skill-row'>
+								<span class='skillLabel'>Design Layer</span>
+								<span class='skillData-Wrapper'>
+							<span class='skillData bg-blue text-center' data-percent='50'>Intermediate</span></span>
+	
+							</div>
+							<div class='row skill-row'>
+								<span class='skillLabel'>Front End {View} </span><code>(Skills: HTML, css, sass, blade, jquery, bootstrap, Laravel Blade)</code>
+								<span class='skillData-Wrapper'>
+								<span class='skillData bg-rust' data-percent='60'>Intermediate</span></span>
+							</div>
+							<div class='row skill-row'>
+								<span class='skillLabel'>Middle Layer {Controller}</span><code>(Skills: php, Laravel)</code>
+								<span class='skillData-Wrapper'>
+								<span class='skillData bg-blue' data-percent='80'>Strong</span></span>
+							</div>
+							<div class='row skill-row'>
+								<span class='skillLabel'>Data Layer {Model}</span><code>(Skills: MS SQL, MySQL, Laravel Eloquent)</code>
+								<span class='skillData-Wrapper'>
+								<span class='skillData bg-rust' data-percent='80'>Strong</span></span>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+    </div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
 	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
