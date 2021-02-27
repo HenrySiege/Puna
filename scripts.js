@@ -1,22 +1,15 @@
-function loadSkillgraph() {
-    $(".skillData").each(function(index, element) {
-        // element == this
-        var mydata = $(element).data();
-        var cnt = 0;
-    
-        //recursive call with a time delay so user can see graph draw.
-        function go() {
-            if (cnt++ < mydata['percent']) {
-                setTimeout(go, 10);
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ 
+$(document).ready(function(){
+    $('.progress-value > span').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 1500,
+            easing: 'swing',
+            step: function (now){
+                $(this).text(Math.ceil(now));
             }
-            $(element).css('width', cnt + '%');
-    
-        }
-    
-        go();
-    
+        });
     });
-    
-    }
-    
-    loadSkillgraph();
+});
